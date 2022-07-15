@@ -13,14 +13,14 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <i class="fa fa-align-justify"></i> {{ trans('admin.mechanic.actions.index') }}
+                        <i class="fa fa-align-justify"></i> Mecanicos
                         <a class="btn btn-primary btn-spinner btn-sm pull-right m-b-0" href="{{ url('admin/mechanics/create') }}" role="button"><i class="fa fa-plus"></i>&nbsp; {{ trans('admin.mechanic.actions.create') }}</a>
                     </div>
                     <div class="card-body" v-cloak>
                         <div class="card-block">
                             <form @submit.prevent="">
                                 <div class="row justify-content-md-between">
-                                    <div class="col col-lg-7 col-xl-5 form-group">
+                                    <div class="col col-lg-15 col-xl-5 form-group">
                                         <div class="input-group">
                                             <input class="form-control" placeholder="{{ trans('brackets/admin-ui::admin.placeholder.search') }}" v-model="search" @keyup.enter="filter('search', $event.target.value)" />
                                             <span class="input-group-append">
@@ -33,7 +33,7 @@
                                             
                                             <option value="10">10</option>
                                             <option value="25">25</option>
-                                            <option value="100">100</option>
+                                            <option value="50">50</option>
                                         </select>
                                     </div>
                                 </div>
