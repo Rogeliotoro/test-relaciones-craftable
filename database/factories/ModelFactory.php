@@ -39,3 +39,15 @@ $factory->define(App\Models\Car::class, static function (Faker\Generator $faker)
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\Mechanic::class, static function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->firstName,
+        'number' => $faker->sentence,
+        'id_cars' => $faker->sentence,
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

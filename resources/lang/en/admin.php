@@ -64,5 +64,23 @@ return [
         ],
     ],
 
+    'mechanic' => [
+        'title' => 'Mechanics',
+
+        'actions' => [
+            'index' => 'Mechanics',
+            'create' => 'New Mechanic',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'name' => 'Name',
+            'number' => 'Number',
+            'id_cars' => 'Id cars',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
